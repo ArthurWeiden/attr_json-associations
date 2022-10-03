@@ -4,7 +4,7 @@ module AttrJson::Associations
   module Record
     extend ActiveSupport::Concern
 
-    def reload(...)
+    def reload
       @attr_json_associations_cache = {}
       super
     end
